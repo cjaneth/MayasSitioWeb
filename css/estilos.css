@@ -1,11 +1,21 @@
 .FondoPagina
 	{
+		
 	}
+header{
+	height: 50%;
+    width: 50%;
+	margin-left:25%;    
+	font-family: 'Berkshire Swash', cursive;
+	font-size:300%;
+}
 .Cabecera
 	{
-		width:1000px;
-		height:250px;
-		margin­bottom:10px;
+		background-color: powderblue;
+		width:76%;
+		height:100%;
+		margin-bottom:10px; 
+		margin-left:10%;
 
 	}
 .FuenteTarjetaPresentacion 
