@@ -1,0 +1,28 @@
+.FondoPagina
+	{
+	}
+.Cabecera
+	{
+		width:1000px;
+		height:250px;
+		margin­bottom:10px;
+
+	}
+.FuenteTarjetaPresentacion 
+	{
+		float: left;
+		width: 350px;
+		border: 2px solid #672222;
+		background: #F3C0C0;
+		padding: 30px;
+		margin: 10px;
+	}
+.FuenteLista
+	{
+		float:left;
+		width: 350px;
+		border: 2px solid #672222;
+		background: #F10AA0
+		padding: 30px;
+		margin: 10px
+	}
