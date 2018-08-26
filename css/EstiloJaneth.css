@@ -15,6 +15,9 @@ nav{
 	-webkit-border-radius: 11px 11px 11px 11px;
 	border: 0px solid #000000;
 }
+iframe{
+	width:40%;
+}
 img{
 	margin:10%;
 }
@@ -50,30 +53,42 @@ box-shadow: -2px 1px 170px -11px rgba(0,0,0,0.75);
 #contenidoTargeta{
 	
 	background-color:#CDC8C7;
-	width:330px;
+	width:30%;
+	min-width:150px;
+	max-width:300px;
 	float:right;
 	-webkit-box-shadow: 10px 10px 23px -2px rgba(0,0,0,0.75);
 	-moz-box-shadow: 10px 10px 23px -2px rgba(0,0,0,0.75);
 	box-shadow: 10px 10px 23px -2px rgba(0,0,0,0.75);
-	border-radius: 17px 148px 17px 17px;
-	-moz-border-radius: 17px 148px 17px 17px;
-	-webkit-border-radius: 17px 148px 17px 17px;
+	border-radius: 17px 25% 17px 17px;
+	-moz-border-radius: 17px 25% 17px 17px;
+	-webkit-border-radius: 17px 25% 17px 17px;
 	border: 0px solid #000000;
 }
 #datos{
 	margin-left:30px;
 }
 #principal{
+	font-family: 'Eagle Lake', cursive;
 	width:55%;
+	min-width:100px;
+}
+#formulario{
+	color:white;
+	padding:10%;
+	font-family: 'Eagle Lake', cursive;
+}
+.campo_registro{
+	margin:10px;
 }
 .dimencionamientoPrincipal{
 	margin-right:0.1%;
 	margin-top:10px;
-	margin-left:60px;
+	margin-left:1%;
 }
 .nombre{
 		font-family: 'Sofia', cursive;
-		margin-left:70px;
+		margin-left:5%;
 }
 .verticalLinea {
   border-left: thick solid #AB908B;
