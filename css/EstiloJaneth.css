@@ -1,0 +1,82 @@
+body{
+	display:block;
+	background-image:url("../imagenes/janeth/fondo2.jpg");
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+nav{
+	margin-left:1%;
+	background-image: linear-gradient(to right, #AB908B , #323E34);
+	padding:5px;
+	border-radius: 11px 11px 11px 11px;
+	-moz-border-radius: 11px 11px 11px 11px;
+	-webkit-border-radius: 11px 11px 11px 11px;
+	border: 0px solid #000000;
+}
+img{
+	margin:10%;
+}
+a{
+	height:100%;
+	width :100%;
+	font-size:40px;
+}
+a:hover {
+	margin-left:10px;
+    background-color: gray;
+	font-size:50px;
+}
+h1{
+	color:white;
+	font-size:300%;
+}
+a:link ,a:visited ,a:hover ,a:active {
+    color: white;
+}
+article{
+	float:right;
+	background-color: #CDC8C7;
+	padding:15px;
+	border-radius: 22px 22px 22px 22px;
+	-moz-border-radius: 22px 22px 22px 22px;
+	-webkit-border-radius: 22px 22px 22px 22px;
+	border: 0px solid #000000;
+	-webkit-box-shadow: -2px 1px 170px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 1px 170px -11px rgba(0,0,0,0.75);
+box-shadow: -2px 1px 170px -11px rgba(0,0,0,0.75);
+}
+#contenidoTargeta{
+	
+	background-color:#CDC8C7;
+	width:330px;
+	float:right;
+	-webkit-box-shadow: 10px 10px 23px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 23px -2px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 23px -2px rgba(0,0,0,0.75);
+	border-radius: 17px 148px 17px 17px;
+	-moz-border-radius: 17px 148px 17px 17px;
+	-webkit-border-radius: 17px 148px 17px 17px;
+	border: 0px solid #000000;
+}
+#datos{
+	margin-left:30px;
+}
+#principal{
+	width:55%;
+}
+.dimencionamientoPrincipal{
+	margin-right:0.1%;
+	margin-top:10px;
+	margin-left:60px;
+}
+.nombre{
+		font-family: 'Sofia', cursive;
+		margin-left:70px;
+}
+.verticalLinea {
+  border-left: thick solid #AB908B;
+  width:100%;
+  height:100%;
+}
