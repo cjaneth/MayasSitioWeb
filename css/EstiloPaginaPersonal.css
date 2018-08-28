@@ -21,12 +21,25 @@ iframe{
 img{
 	margin:10%;
 }
+img.pie{
+	margin:0px;	
+   position: fixed;
+   right: 0;
+   top: 0;
+   text-align: right;
+   opacity: 0.5;
+}
+}
+footer{
+  
+}
 a{
 	height:100%;
 	width :100%;
 	font-size:40px;
 }
 a:hover {
+	margin-top:100px;
 	margin-left:10px;
     background-color: gray;
 	font-size:50px;
@@ -35,7 +48,8 @@ h1{
 	color:white;
 	font-size:300%;
 }
-a:link ,a:visited ,a:hover ,a:active {
+
+a:link ,a:visited ,a:hover ,a:active,h3:hover {
     color: white;
 }
 article{
