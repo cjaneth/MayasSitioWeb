@@ -1,11 +1,108 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang= "es"> 
 	<head>
-		<title>
-			Bienvenidos A mi pagina personal
-		</title>
+		<meta charset= "UTF-8"/>
+		<link rel="stylesheet" href="../css/EstiloPaginaPersonal.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+		<title>Santiago Guzman</title>
 	</head>
-	<body>
-		
+	<body> 
+
+		<nav>
+				<a  href="../index.html" onclick="openNav()" class="verticalLinea"><i class="fa fa-home"></i> </a>			
+				<a  href="#musica" onclick="openNav()" class="verticalLinea"><i class="fa fa-music" aria-hidden="true"></i></a>			
+				<a  href="#libros" onclick="openNav()" class="verticalLinea"><i class="fa fa-book" aria-hidden="true"></i></a>
+				<a  href="#sugerencia" onclick="openNav()" class="verticalLinea"><i class="fa fa-weixin" aria-hidden="true"></i></a>
+		</nav>
+		<div id="contenedor">
+			<aside id="contenidoTargeta" class="dimencionamientoPrincipal">	
+				<div>
+				  <img src="../imagenes/santiago/personaje.png" style="width:50%" alt="AVATAR">
+					<div id="datosBasicos">
+					  <h2 class="nombre"><b>Santiago Guzman</b></h2><hr>
+					  <p id="datos"><i class="fa fa-graduation-cap" aria-hidden="true"> </i>Ingenieria de Sistemas<br><br>
+						<i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Universidad del Cauca<br><br>
+						<i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Popayan, Cauca<br><br>
+						<i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> 06/10/1995<br><br>
+						<i class="fa fa-phone" aria-hidden="true"></i>3117004927
+					  </p>
+					</div>
+				</div>
+			</aside>
+			
+			<article id="principal" class="dimencionamientoPrincipal">
+			<h2>CONTENIDO:</h2>
+				<section id="musica">
+					<h3><i class="fa fa-music" aria-hidden="true"></i>   Mi Musica:</h3>
+					<iframe  height="315" src="https://www.youtube.com/watch?v=1mjlM_RnsVE" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<iframe  height="315" src="https://www.youtube.com/watch?v=KUKOw2Ar5VA&t=30s" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</section>
+				<section id="libros">
+					<h3><i class="fa fa-book" aria-hidden="true"></i>    Libros Favoritos:</h3>
+					
+					<img src="../imagenes/santiago/images.jpg" style="width:25%" alt="portada1">
+					
+					<img src="../imagenes/santiago/libro.jpg" style="width:25%" alt="portada2">
+				
+					<img src="../imagenes/santiago/libro2.jpg" style="width:25%" alt="portada3">
+					
+				</section>
+				
+			</article>
+			
+			<div id="formulario" >
+					<fieldset>				
+					<legend class=campo_registro>SUGERENCIAS</legend>
+					<form method="post" action="../" enctype="multipart/form-data" id="form1" name="form1">			
+						<div class=campo_registro>
+							<label for="Nombre">Nombre</label>
+							<input type="text" name="Nombre" id="Nombre" value=""/>				
+						</div>
+						<div class=campo_registro>
+							<label for="Pais">Pais</label>
+							<input type="text" name="Pais" id="Pais" value="" />				
+						</div>
+						<div class=campo_registro>
+							<label for="Ciudad">Ciudad</label>
+							<input type="text" name="Ciudad" id="Ciudad" value="" />				
+						</div>
+						<!--
+						<div class=campo_registro>
+							<label for="Nacimiento">Fecha de Nacimiento </label>
+							<input type="date" id="Nacimiento" name="Nacimiento" value=""/>
+						</div>-->
+						<div class=campo_registro>
+							<label>Genero</label>
+							<select name="Genero">
+								<option value="F">F</option>
+								<option value="M">M</option>
+							</select>
+						</div>
+						<div class=campo_registro>
+									<label for="Correo">Correo:</label>
+									<input type="email" name="Correo" id="Correo" value="" />
+						</div>				
+									
+						<fieldset>
+
+							<legend class=campo_registro>Ocupacion</legend>
+							<div class=campo_registro>
+								<input type="radio"  name="Ocupacion" value="Profesor"  />Profesor
+								<input type="radio"  name="Ocupacion" value="Estudiante" />Estudiante
+								<input type="radio"  name="Ocupacion" value="Otro"/>Otro
+							</div>
+						</fieldset>
+					</form>		
+					<div class=campo_registro id="sugerencia">
+						<label for="Sugerencia">Sugerencia</label>
+						 <textarea rows="4" cols="50" name="Sugerencia" id="Sugerencia" form="form1"></textarea>
+					</div>	
+					<button type="submit" form="form1" class="button"><span>Enviar! </span></button>
+					</fieldset>
+				</div>
+			
+		</div>
 	</body>
 </html>
