@@ -159,3 +159,13 @@ header>div {
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+/*Propiedades de tabla*/
+td{
+	padding:3%;
+}
+tr:nth-child(odd) {
+background-color:#F4ECF7    ;
+}
+tr:nth-child(even) {
+background-color:#D5F5E3;
+}
