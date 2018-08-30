@@ -1,43 +1,166 @@
-body{
-	background-image:url("../imagenes/fondo.jpg");
-	background-position: center;
-	background-size:cover;
-	background-repeat: no-repeat;
-    background-attachment: fixed;
+html {
+    height: 100%;
 }
-header{
-	height: 50%;
-    width: 50%;
-	margin-left:25%;    
-	font-family: 'Berkshire Swash', cursive;
-	font-size:300%;
-}
-.Cabecera
-	{
-		font-size:125%;
-		color:black;
-		text-shadow: 0.05em 0.05em white;		
-		width:76%;
-		height:100%;
-		margin-bottom:10px; 
-		margin-left:10%;
 
-	}
-.FuenteTarjetaPresentacion 
-	{
-		float: left;
-		width: 350px;
-		border: 2px solid #672222;
-		background: #F3C0C0;
-		padding: 30px;
-		margin: 10px;
-	}
-.FuenteLista
-	{
-		float:left;
-		width: 350px;
-		border: 2px solid #672222;
-		/*background: #F10AA0;*/
-		padding: 30px;
-		margin: 10px
-	}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+
+/* Propiedades de la barra de navegacion */
+
+.navbar {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar li {
+    text-align: center;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    padding-inline-end: 40px;
+    display: inline;
+    color: #666;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+/* Propiedades de la parte inicial de la pagina */
+
+header {
+    padding-top: 5%;
+    text-align: center;
+    background-image: url("../imagenes/fondo1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 300%;
+    color: indigo;
+    text-shadow: 0.05em 0.05em gold;
+    height: 100%;
+    width: 100%;
+}
+
+header>h2 {
+    text-align: center;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+header>h2:hover {
+    color: black;
+}
+
+header>h6 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+header>div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#logoMayas {
+    width: 300px;
+    height: 300px;
+}
+
+
+/* Propiedades de la seccion historia */
+
+#historia {
+    padding-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 80%;
+    width: 100%;
+    background-color: aqua;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* Propiedades de la seccion integrantes */
+
+#integrantes {
+    padding-top: 5%;
+    padding-left: 5%;
+    height: 80%;
+}
+
+.card {
+    height: 200px;
+    width: 200px;
+    border: 2px black;
+}
+
+.icono {
+    height: 30px;
+    width: 30px;
+}
+
+.Cabecera {
+    font-size: 125%;
+    color: black;
+    text-shadow: 0.05em 0.05em rgb(14, 60, 77);
+    width: 76%;
+    height: 100%;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    text-align: justify
+}
+
+.FuenteTarjetaPresentacion {
+    float: left;
+    width: 350px;
+    border: 2px solid #672222;
+    background: #F3C0C0;
+    padding: 30px;
+    margin: 10px;
+}
+
+.FuenteLista {
+    float: left;
+    width: 350px;
+    border: 2px solid #672222;
+    /*background: #F10AA0;*/
+    padding: 30px;
+    margin: 10px
+}
+
+
+/* propiedades de la seccion Pie de pagina */
+
+#piePag {
+    height: 20%;
+    background-color: bisque;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+    color: darkblue;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
