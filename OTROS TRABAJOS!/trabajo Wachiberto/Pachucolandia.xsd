@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="lugar" >			
+		<!--Definitr es complejo tiene atributos-->
+		<xs:complexType>
+				<xs:sequence>					
+					<xs:element name="acciones">						
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="accion" maxOccurs="unbounded">			
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="descripcion" type="xs:string" minOccurs="1"
+											maxOccurs="1"/>			
+											<xs:element name="codLista" type="xs:string" minOccurs="0" 
+											maxOccurs="unbounded"/>
+										</xs:sequence>
+										<xs:attribute name="codAccion" type="xs:string" use="required"/>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					
+					<xs:element name="listas">						
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="listasCompras" >			
+									<xs:complexType>
+										<xs:sequence>
+											 <xs:element name="listaCompras" maxOccurs="unbounded">			
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name="codProducto" type="xs:string" maxOccurs="unbounded"/>
+													</xs:sequence>
+													<xs:attribute name="codLista" type="xs:string" use="required"/>
+												</xs:complexType>
+											</xs:element>
+											
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="listasAcciones" >			
+									<xs:complexType>
+										<xs:sequence>
+											 <xs:element name="listaAcciones" maxOccurs="unbounded">			
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name="codAccion" type="xs:string" maxOccurs="unbounded"/>
+													</xs:sequence>
+													<xs:attribute name="codLista" type="xs:string" use="required"/>
+												</xs:complexType>
+											</xs:element>											
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+
+					<xs:element name="productos">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="producto" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="nombreProducto" type="xs:string" />
+											<xs:element name="caducidadProducto" type="xs:string" minOccurs="0"/>
+											<xs:element name="precioProducto" type="xs:integer" />
+										</xs:sequence>
+										<xs:attribute name="codProducto" type="xs:string"/>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="profesiones">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="profesion" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="cargo" type="xs:string"/>
+										</xs:sequence>
+										<xs:attribute name="cod" type="xs:string"/>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					
+					<xs:element name="empresas">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="empresa" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="nombreEmpresa" type="xs:string" />
+											<xs:element name="pachudolaresPresupuesto" type="xs:integer" />
+											<xs:element name="direccion" type="xs:string" />
+											<xs:element name="trabajadores">
+												<xs:complexType>
+												<xs:sequence>
+													<xs:element name="trabajador" maxOccurs="unbounded">
+														<xs:complexType>
+														<xs:sequence>
+															<xs:element name="nombreTrabajador" type="xs:string" />
+															<xs:element name="cargoProfecional"  maxOccurs="unbounded">
+																<xs:complexType>
+																	<xs:sequence>
+																	 <xs:element name="codProfecion" type="xs:string" />
+																	</xs:sequence>
+																</xs:complexType>
+															</xs:element>
+														</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+										</xs:sequence>
+										<xs:attribute name="codigoEmpresa" type="xs:string" />
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				
+					<xs:element name="habitantes">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="personaje" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="extremidades">
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name="extremidad"  maxOccurs="2">
+															<xs:complexType>
+																<xs:sequence>
+																	<xs:element name="cantidad" type="xs:string"/>
+																</xs:sequence>
+																<xs:attribute name="tipo" type="xs:string"/>
+															</xs:complexType>
+														</xs:element>
+													</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+											<xs:element name="formacionProfecional"  minOccurs="0">
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name="codProfecion" type="xs:string"  minOccurs="0" maxOccurs="unbounded"/>
+													</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+											<xs:element name="vestimenta">
+												<xs:complexType>
+													<xs:sequence>
+													<xs:element name="prenda"  minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="tipo" type="xs:string"/>
+																<xs:element name="color" type="xs:string"/>
+																</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+											<xs:element name="tareasDiarias"  minOccurs="0" >
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name="codigoAccion" type="xs:string"  minOccurs="0" maxOccurs="unbounded"/>
+													</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+										</xs:sequence>
+										<xs:attribute name="nombre" type="xs:string"/>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<!--Definitr atributos-->
+				<xs:attribute name="nombre" type="xs:string"/>
+		</xs:complexType>			
+	</xs:element>	
+</xs:schema> 
