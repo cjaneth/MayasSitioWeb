@@ -92,11 +92,10 @@ header>div {
     font-family: Arial, Helvetica, sans-serif;
     height: 80%;
     width: 100%;
-    background-color: aqua;
+	 background-image: radial-gradient(circle,#D2B4DE  , #D5F5E3,#B2BABB  );
     display: inline-block;
     vertical-align: top;
 }
-
 
 /* Propiedades de la seccion integrantes */
 
