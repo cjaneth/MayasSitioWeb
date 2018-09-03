@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lugar nombre="Pachucolandia">
+	<acciones>
+		<accion codAccion="0">
+			<descripcion>tenerCita</descripcion>
+		</accion>
+		<accion codAccion="1">
+			<descripcion>comprar</descripcion>
+			<codLista>01</codLista>
+		</accion>
+		<accion codAccion="2">
+			<descripcion>realizarCita</descripcion>
+			<codLista>03</codLista>
+		</accion>
+		<accion codAccion="3">
+			<descripcion>darburbuflores</descripcion>
+		</accion>
+		<accion codAccion="4">
+			<descripcion>Salir al Parque</descripcion>
+		</accion>
+		<accion codAccion="5">
+			<descripcion>contar chiste</descripcion>
+		</accion>
+		<accion codAccion="6">
+			<descripcion>hablar de la vida</descripcion>
+		</accion>
+		<accion codAccion="7">
+			<descripcion>ver Atardecer</descripcion>
+		</accion>
+		<accion codAccion="8">
+			<descripcion>llevar a cenar</descripcion>
+		</accion>
+		<accion codAccion="9">
+			<descripcion>llevar a la casa</descripcion>
+		</accion>
+	</acciones>
+	<listas>
+		<listasCompras>
+			<listaCompras codLista="01">				
+					<codProducto>0</codProducto>
+					<codProducto>1</codProducto>				
+			</listaCompras>
+		</listasCompras>
+		<listasAcciones>
+			<listaAcciones codLista="02">
+				<codAccion>1</codAccion>
+			</listaAcciones>
+			<listaAcciones codLista="03">
+				<codAccion>2</codAccion>
+				<codAccion>3</codAccion>
+				<codAccion>4</codAccion>
+				<codAccion>5</codAccion>
+				<codAccion>6</codAccion>
+				<codAccion>7</codAccion>
+				<codAccion>8</codAccion>
+				<codAccion>9</codAccion>				
+			</listaAcciones>
+		</listasAcciones>
+		
+			
+	</listas>
+	<productos>
+		<producto codProducto="0">
+			<nombreProducto>dulcearroz</nombreProducto>
+			<caducidadProducto>15/01/2019</caducidadProducto>
+			<precioProducto>50</precioProducto>
+		</producto >
+		<producto codProducto="1">
+			<nombreProducto>burbuflores</nombreProducto>
+			<precioProducto>34</precioProducto>
+		</producto>
+	</productos>
+	
+	
+	<profesiones>
+		<profesion cod="1">
+			<cargo>cargador de estircol</cargo>
+		</profesion>
+		<profesion cod="2">
+			<cargo>contador publico</cargo>
+		</profesion>
+		<profesion cod="1">
+			<cargo>gerente</cargo>
+		</profesion>
+	</profesiones>
+	<empresas>
+		<empresa codigoEmpresa="01">
+			<nombreEmpresa>recolección de resortes</nombreEmpresa>
+			<pachudolaresPresupuesto>100000</pachudolaresPresupuesto>
+			<direccion>calleMedia</direccion>
+			<trabajadores>
+				<trabajador>
+					<nombreTrabajador>Wachiberto</nombreTrabajador>
+					<cargoProfecional>
+						<codProfecion>2</codProfecion>
+					</cargoProfecional>				
+				</trabajador>
+				<trabajador>
+					<nombreTrabajador>Wachiberlo</nombreTrabajador>
+					<cargoProfecional>
+						<codProfecion>3</codProfecion>
+					</cargoProfecional>
+				</trabajador>
+			</trabajadores>
+		</empresa>
+	</empresas>
+	<habitantes>
+		<personaje nombre="Wachiberto">
+			<extremidades>
+				<extremidad tipo="superior">
+					<cantidad>8 </cantidad>
+				</extremidad>
+				<extremidad tipo="inferior">
+					<cantidad>4 </cantidad>
+				</extremidad>
+			</extremidades>
+			<formacionProfecional>
+				<codProfecion>1</codProfecion>
+			</formacionProfecional>		
+			<vestimenta>
+				<prenda>
+					<tipo>camisa</tipo>
+					<color>azul</color>
+				</prenda>
+				<prenda>
+					<tipo>pantalon</tipo>
+					<color>gris</color>
+				</prenda>
+			</vestimenta>
+			<tareasDiarias>
+				<codigoAccion>1</codigoAccion>
+				<codigoAccion>0</codigoAccion>
+				<codigoAccion>2</codigoAccion>				
+			</tareasDiarias>
+		</personaje>
+		<personaje nombre="Wachiberlo">
+			<extremidades>
+				<extremidad tipo="superior">
+					<cantidad>2 </cantidad>
+				</extremidad>
+				<extremidad tipo="inferior">
+					<cantidad>3 </cantidad>
+				</extremidad>
+			</extremidades>
+			<formacionProfecional>
+				<codProfecion>2</codProfecion>
+			</formacionProfecional>
+			<vestimenta>
+				<prenda>
+					<tipo>camisa</tipo>
+					<color>rojo</color>
+				</prenda>
+				<prenda>
+					<tipo>oberol</tipo>
+					<color>gris</color>
+				</prenda>
+			</vestimenta>
+		</personaje>
+		<personaje nombre="esterlina">
+			<extremidades>
+				<extremidad tipo="superior">
+					<cantidad>2 </cantidad>
+				</extremidad>
+				<extremidad tipo="inferior">
+					<cantidad>2 </cantidad>
+				</extremidad>
+			</extremidades>
+			<vestimenta>
+				<prenda>
+					<tipo>vestido</tipo>
+					<color>rosa</color>
+				</prenda>
+			</vestimenta>
+			<tareasDiarias>
+				<codigoAccion>0</codigoAccion>			
+			</tareasDiarias>
+		</personaje>
+	</habitantes>
+</lugar>
