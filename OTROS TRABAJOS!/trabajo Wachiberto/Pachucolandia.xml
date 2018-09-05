@@ -2,18 +2,18 @@
 <lugar nombre="Pachucolandia">
 	<acciones>
 		<accion codAccion="0">
-			<descripcion>tenerCita</descripcion>
+			<descripcion>Tener una cita</descripcion>
 		</accion>
 		<accion codAccion="1">
 			<descripcion>comprar</descripcion>
 			<codLista>01</codLista>
 		</accion>
 		<accion codAccion="2">
-			<descripcion>realizarCita</descripcion>
+			<descripcion>Realizar una cita</descripcion>
 			<codLista>03</codLista>
 		</accion>
 		<accion codAccion="3">
-			<descripcion>darburbuflores</descripcion>
+			<descripcion>Dar Burbuflores</descripcion>
 		</accion>
 		<accion codAccion="4">
 			<descripcion>Salir al Parque</descripcion>
